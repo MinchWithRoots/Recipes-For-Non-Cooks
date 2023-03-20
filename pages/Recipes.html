@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Recipes | Recipes for Non-Cooks</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/pagesStyles.css" />
+    <link rel="stylesheet" href="/styles/Recipes.css" />
+  </head>
+  <body>
+
+    <!-- <logo>
+      <img class="logo" src="/images/logo.png" alt="logo">
+    </logo> -->
+
+    <header id="header">
+      <div class="navbar-container">
+        <div class="hamburger" id="hamburgerMenu" onclick="hamburgerMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+
+        
+
+        <div class="navbar">
+            <a href="/index.html">Home</a>
+            <a href="/pages/About.html">About</a>
+            <a href="/pages/Recipes.html">Recipes</a>
+        </div>
+        <div class="responsive-navbar" id="hamburgerMenuOpen">
+          <a href="/index.html">Home</a>
+          <a href="/pages/About.html">About</a>
+          <a href="/pages/Recipes.html">Recipes</a>
+
+          
+        </div>
+      </div>
+    </header>
+
+    
+
+    <section class="main-section">
+      <div id="filter-container">
+        <input type="radio" id="All" name="categories" value="All" checked>
+        <input type="radio" id="Bakery" name="categories" value="Bakery">
+        <input type="radio" id="Meat" name="categories" value="Meat">
+        <input type="radio" id="Vegetables" name="categories" value="Vegetables">
+        <input type="radio" id="Breakfast" name="categories" value="Breakfast">
+        <input type="radio" id="Lunch" name="categories" value="Lunch">
+        <input type="radio" id="Dinner" name="categories" value="Dinner">
+
+        <ol class="filters">
+          <li>
+            <label for="All">All</label>
+          </li>
+          <li>
+            <label for="Bakery">Bakery</label>
+          </li>
+          <li>
+            <label for="Meat">Meat</label>
+          </li>
+          <li>
+            <label for="Vegetables">Vegetables</label>
+          </li>
+          <li>
+            <label for="Breakfast">Breakfast</label>
+          </li>
+          <li>
+            <label for="Lunch">Lunch</label>
+          </li>
+          <li>
+            <label for="Dinner">Dinner</label>
+          </li>
+        </ol>
+
+        <ol class="posts">
+          <li class="post" data-category="Bakery Breakfast">
+            <article>
+              <figure>
+                <a href="/pages/Lemon Pie.html" target="_blank">
+                  <img class="recipe-image" src="/images/lemon pie.jpg" alt="Lemon pie image">
+                </a>
+                <figcaption>
+                  <ol class="post-categories">
+                    <li>
+                      <a href="">Bakery</a>
+                    </li>
+                    <li>
+                      <a href="">Breakfast</a>
+                    </li>
+                  </ol>
+                  <h2 class="post-title">
+                    <a href="/pages/Lemon Pie.html" target="_blank">Lemon Pie</a>
+                  </h2>
+                </figcaption>
+              </figure>
+            </article>
+          </li>
+
+
+          <li class="post" data-category="Bakery Breakfast">
+            <article>
+              <figure>
+                <a href="/pages/Muffins with jam.html" target="_blank">
+                  <img class="recipe-image" src="/images/muffins.jpg" alt="Muffins with jam image">
+                </a>
+                <figcaption>
+                  <ol class="post-categories">
+                    <li>
+                      <a href="">Bakery</a>
+                    </li>
+                    <li>
+                      <a href="">Breakfast</a>
+                    </li>
+                  </ol>
+                  <h2 class="post-title">
+                    <a href="/pages/Muffins with jam.html" target="_blank">Muffins with Jam</a>
+                  </h2>
+                </figcaption>
+              </figure>
+            </article>
+          </li>
+           
+          <li class="post" data-category="Meat Dinner">
+            <article>
+              <figure>
+                <a href="/pages/Korean Fried Chicken.html" target="_blank">
+                  <img class="recipe-image" src="/images/chicken.jpg" alt="Korean fried chicken image">
+                </a>
+                <figcaption>
+                  <ol class="post-categories">
+                    <li>
+                      <a href="">Meat</a>
+                    </li>
+                    <li>
+                      <a href="">Dinner</a>
+                    </li>
+                  </ol>
+                  <h2 class="post-title">
+                    <a href="/pages/Korean Fried Chicken.html" target="_blank">Korean Fried Chicken</a>
+                  </h2>
+                </figcaption>
+              </figure>
+            </article>
+          </li>
+
+          <li class="post" data-category="Bakery Breakfast">
+            <article>
+              <figure>
+                <a href="/pages/Lemon Pie.html" target="_blank">
+                  <img class="recipe-image" src="/images/lemon pie.jpg" alt="Lemon Pie Image">
+                </a>
+                <figcaption>
+                  <ol class="post-categories">
+                    <li>
+                      <a href="">Bakery</a>
+                    </li>
+                    <li>
+                      <a href="">Breakfast</a>
+                    </li>
+                  </ol>
+                  <h2 class="post-title">
+                    <a href="/pages/Lemon Pie.html" target="_blank">Lemon Pie</a>
+                  </h2>
+                </figcaption>
+              </figure>
+            </article>
+          </li>
+
+          <li class="post" data-category="Bakery Breakfast">
+            <article>
+              <figure>
+                <a href="/pages/Muffins with jam.html" target="_blank">
+                  <img class="recipe-image" src="/images/muffins.jpg" alt="Muffins with jam image">
+                </a>
+                <figcaption>
+                  <ol class="post-categories">
+                    <li>
+                      <a href="">Bakery</a>
+                    </li>
+                    <li>
+                      <a href="">Breakfast</a>
+                    </li>
+                  </ol>
+                  <h2 class="post-title">
+                    <a href="/pages/Muffins with jam.html" target="_blank">Muffins with Jam</a>
+                  </h2>
+                </figcaption>
+              </figure>
+            </article>
+          </li>
+
+         </ol>
+      </div>
+    </section>
+   
+
+    <footer id="footer">
+      <h1>Contact the developer:</h1>
+      <h2>gwyarmoss@gmail.com</h2>
+    </footer>  
+  
+    <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+
+
+.logo {
+  position: absolute;
+  float: left;
+  height: 6rem;
+  width: 12rem;
+  margin: 1rem 2rem;
+}
+
+.main-section {
+  height: auto;
+  min-height: 50rem;
+}
+.filter-container {
+   max-width: 1200px;
+   margin: 0 auto;
+ }
+
+/* img {
+   display: block;
+   width: 100%;
+   /* height: auto;
+   max-height: 24rem; */
+
+
+a {
+   text-decoration: none;
+   color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* <-- filters -->*/
+
+input[type="radio"] {
+  position: absolute;
+  left: -9999px;
+}
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --green: #005834;
+}
+
+.filters {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.filters * {
+  display: inline-block;
+}
+
+.filters label {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.25rem;
+  border-radius: 2rem;
+  min-width: 50px;
+  line-height: normal;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.filters label:hover {
+  background: var(--green);
+  color: var(--white);
+}
+
+
+/* <-- posts -->*/
+
+.recipe-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  height: 22rem;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.posts {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 3rem;
+  margin-bottom: 10rem;
+}
+
+.posts .post {
+  /* color: #000; */
+  border: solid 1px #fff;
+  border-radius: 5px;
+}
+
+.posts .post-title {
+  justify-content: center;
+  /* margin-top: 3rem; */
+  font-size: 1.7rem;
+}
+
+.posts .post-title:hover {
+  text-decoration: underline;
+}
+
+.posts figcaption {
+  margin: 0.5rem;
+  padding: 1rem;
+}
+
+.posts .post-categories {
+  margin-bottom: 0.75rem;
+  font-size: 0.75rem;
+  padding: 0;
+  float: right;
+}
+
+.posts .post-categories * {
+  display: inline-block;
+}
+
+.posts .post-categories li {
+  margin-bottom: 0.2rem;
+}
+
+.posts .post-categories a {
+  padding: 0.2rem 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid;
+  line-height: normal;
+  background: all 0.1s;
+}
+
+.posts .post-categories a:hover {
+  background: var(--green);
+  color: var(--white);
+}
+
+/* @media screen and (max-width: 1000px) {
+  .recipe-image {
+    height: 20rem;
+  }
+}
+
+@media screen and (max-width: 1650px) {
+  .recipe-image {
+    height: 20rem;
+  }
+} */
+
+@media screen and (max-width: 1600px) {
+  .recipe-image {
+    height: 20rem;
+  }
+}
+
+
+@media screen and (max-width: 1050px) {
+  .recipe-image {
+    height: 17rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .posts {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .posts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* <-- filtering rules --> */
+
+[value="All"]:checked ~ .posts [data-category] {
+  display: block;
+}
+[value="Bakery"]:checked ~ .posts .post:not([data-category~="Bakery"]),
+[value="Meat"]:checked ~ .posts .post:not([data-category~="Meat"]),
+[value="Vegetables"]:checked ~ .posts .post:not([data-category~="Vegetables"]),
+[value="Breakfast"]:checked ~ .posts .post:not([data-category~="Breakfast"]),
+[value="Lunch"]:checked ~ .posts .post:not([data-category~="Lunch"]),
+[value="Dinner"]:checked ~ .posts .post:not([data-category~="Dinner"]) {
+  display: none;
+}
+  
+ [value="All"]:checked ~ .filters [for="All"],
+ [value="Bakery"]:checked ~ .filters [for="Bakery"],
+ [value="Meat"]:checked ~ .filters [for="Meat"],
+ [value="Vegetables"]:checked ~ .filters [for="Vegetables"],
+ [value="Breakfast"]:checked ~ .filters [for="Breakfast"],
+ [value="Lunch"]:checked ~ .filters [for="Lunch"],
+ [value="Dinner"]:checked ~ .filters [for="Dinner"] {
+   background: var(--green);
+   color: var(--white);
+ }
